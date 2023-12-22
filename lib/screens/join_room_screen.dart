@@ -44,12 +44,16 @@ class _JoinRoomScreenState extends State<JoinRoomScreen> {
                 controller: _nameControler,
                 hintText: "Enter your nickname",
               ),
-              SizedBox(height: 20,),
+              const SizedBox(
+                height: 20,
+              ),
               CustomTextField(
                 controller: _gameIDControler,
                 hintText: "Enter your Gamer ID",
               ),
-              SizedBox(height: size.height * 0.045,),
+              SizedBox(
+                height: size.height * 0.045,
+              ),
               CustomButton(onTap: () {}, text: "Create")
             ],
           ),
