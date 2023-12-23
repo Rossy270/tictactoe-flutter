@@ -5,7 +5,7 @@ class SocketClient {
   static SocketClient? _instance;
 
   SocketClient._internal() {
-    socket = IO.io('192.168.100.9:3000', <String, dynamic> {
+    socket = IO.io('http://127.0.0.1:3000', <String, dynamic> {
       'transports' : ['websocket'],
       'autoConnect' : false
     });
